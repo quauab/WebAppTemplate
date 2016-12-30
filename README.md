@@ -14,7 +14,7 @@ Without this existing package.json file:
 # Development Dependencies
   npm install --save-dev gulp-sass
   
-# Install Nodemon
+# Install live-server
 npm install -g live-server
 
 # Run Application
