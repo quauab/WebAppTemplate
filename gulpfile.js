@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 gulp.task('style', function(){
     var scss = gulp.src('./public/scss/style.scss');
     var css = gulp.src('./public/css/style.css');
-    
+
     return es.merge(scss,css)
         .pipe(concat('style.min.css'))
         .pipe(sass({outputStyle:'compressed'}))
@@ -24,5 +24,6 @@ gulp.task('minify', ['style'], function(){
 });
 
 gulp.task('watch',['minify'], function(){
-    gulp.watch('scripts/*.js', ['minify']);
+    gulp.watch('public/js/*.js', ['minify']);
+    gulp.watch('public/css/*.css',['style']);
 });
