@@ -127,11 +127,25 @@ ul {
     width:90px;
 }
 
+.box p, .box h3 {
+    color:rgb(30,80,150);
+    font-family: cursive;
+}
+
+.box p {
+    font-size: 22px;
+}
+
+.box h3 {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
 
 
 /*Footer*/
 footer {
-    color: rgb(240,230,255);
+    color: inherit;
     background: rgb(10,10,10);
     text-align: center;
     width:95vw;
