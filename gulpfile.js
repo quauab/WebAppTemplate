@@ -26,4 +26,5 @@ gulp.task('scripts', ['styles'], function(){
 gulp.task('watch',['scripts'], function(){
     gulp.watch('public/js/*.js', ['scripts']);
     gulp.watch('public/css/*.css',['styles']);
+    gulp.watch('public/scss/*.scss',['styles']);
 });

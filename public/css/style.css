@@ -1,39 +1,3 @@
-/*Global*/
-body {
-    background-color:rgb(240,230,255);
-}
-
-a {
-    color:rgb(240,230,255);
-    text-decoration: none;
-}
-
-.container {
-    width:80vw;
-    margin:auto;
-    overflow: hidden;
-}
-
-.v-scroll {
-	overflow:scroll;
-}
-
-.wrapper {
-    display: block;
-    height:70vh;
-    margin-top: 1%;
-}
-
-::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
-}
-
-::-webkit-scrollbar-thumb {
-    background: #FF0000;
-}
-
-
 
 
 /*Header*/
@@ -85,20 +49,12 @@ ul {
 
 
 
-
-
-
-
+/*Wrapper*/
 .wrapper {
     width:95vw;
     margin-left: auto;
     margin-right: auto;
 }
-
-
-
-
-
 
 
 
@@ -119,10 +75,6 @@ ul {
 #showCase p {
     font-size: 20px;
 }
-
-
-
-
 
 
 
@@ -159,11 +111,6 @@ ul {
 
 
 
-
-
-
-
-
 /*Boxes*/
 #boxes {
     margin-top:20px;
@@ -179,9 +126,6 @@ ul {
 #boxes .box img {
     width:90px;
 }
-
-
-
 
 
 
