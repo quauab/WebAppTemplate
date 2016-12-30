@@ -4,7 +4,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     es = require('event-stream');
 
-gulp.task('style', function(){
+gulp.task('styles', function(){
     var scss = gulp.src('./public/scss/style.scss');
     var css = gulp.src('./public/css/style.css');
 
@@ -14,7 +14,7 @@ gulp.task('style', function(){
         .pipe(gulp.dest('./public/dist'));
 });
 
-gulp.task('minify', ['style'], function(){
+gulp.task('scripts', ['styles'], function(){
     var js = gulp.src('./public/js/*.js');
 
     return es.merge(js)
@@ -23,7 +23,7 @@ gulp.task('minify', ['style'], function(){
     .pipe(gulp.dest('./public/dist'));
 });
 
-gulp.task('watch',['minify'], function(){
-    gulp.watch('public/js/*.js', ['minify']);
-    gulp.watch('public/css/*.css',['style']);
+gulp.task('watch',['scripts'], function(){
+    gulp.watch('public/js/*.js', ['scripts']);
+    gulp.watch('public/css/*.css',['styles']);
 });
