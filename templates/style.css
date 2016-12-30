@@ -40,13 +40,10 @@ a {
 header {
     background: rgb(10,10,10);
     color: rgb(240,230,255);
-    /*border-radius: 15px;
-    box-shadow: 5px 5px 15px rgb(100,100,100);*/
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgb(100,100,100);
     padding-top:30px;
     min-height: 70px;
-    width:95vw;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 header li {
@@ -82,20 +79,6 @@ ul {
     margin:0;
     padding:0;
 }
-
-
-
-
-
-
-
-.wrapper {
-    width:95vw;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
 
 
 
