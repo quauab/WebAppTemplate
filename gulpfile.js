@@ -2,7 +2,8 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     sass = require('gulp-sass'),
-    es = require('event-stream');
+    es = require('event-stream'),
+    babel = require('gulp-babel');
 
 gulp.task('styles', function(){
     var scss = gulp.src('./public/scss/style.scss');
@@ -18,6 +19,7 @@ gulp.task('scripts', ['styles'], function(){
     var js = gulp.src('./public/js/*.js');
 
     return es.merge(js)
+    .pipe(babel({presets:['es2015']}))
     .pipe(concat('scripts.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./public/dist'));
