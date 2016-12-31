@@ -1,4 +1,8 @@
-
+.container {
+    width:80vw;
+    margin:auto;
+    overflow: hidden;
+}
 
 /*Header*/
 header {
@@ -155,4 +159,66 @@ footer {
 
 footer p {
     padding:2%;
+}
+
+
+
+
+
+@media screen and (max-width: 830px)  {
+    header li ,
+    header #branding ,
+    header nav,
+    #newsLetter h1,
+    #newsLetter form,
+    #boxes .box {
+        float:none;
+        text-align: center;
+        width:100%;
+    }
+    
+    #newsLetter {
+        margin:auto;
+        text-align:center;
+    }
+        
+    #newsLetter button {        
+        display: block;
+        width:25%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+    #newsLetter form input[type="email"] {
+        display:block;
+        width:48.3%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+@media screen and (max-width: 397px)  {
+    header li ,
+    header #branding,
+    header nav,
+    #newsLetter h1,
+    #newsLetter form,
+    #boxes .box    {
+        float:none;
+        text-align: center;
+    }
+    
+    #newsLetter {
+        margin:auto;
+        text-align:center;
+    }
+    
+    #newsLetter form input[type="email"],
+    #newsLetter button {        
+        display: block;
+        width:100%;
+    }
+    
+    
+   
 }
