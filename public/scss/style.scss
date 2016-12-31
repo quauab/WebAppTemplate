@@ -33,3 +33,30 @@ a {
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
 }
+
+
+@media(max-width:768px) {
+    #boxes .box,
+    #newsLetter .container {
+        float:none;
+        width: 100%;
+        text-align: center;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #newsLetter button,
+    .quote button {
+        display: block;
+        width:100%;
+    }
+
+    #newsLetter form input[type="email"],
+    .quote input,
+    .quote textarea {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
