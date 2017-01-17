@@ -46,13 +46,13 @@ a {
         text-align: center;
         width:100%;
     }
-    
+
     #newsLetter {
         margin:auto;
         text-align:center;
     }
-        
-    #newsLetter button {        
+
+    #newsLetter button {
         display: block;
         width:25%;
         margin-top:1%;
@@ -60,7 +60,41 @@ a {
         margin-left:auto;
         margin-right:auto;
     }
-    
+
+    #newsLetter form input[type="email"] {
+        display:block;
+        width:48.3%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+@media(max-width:830px) {
+    header li ,
+    header #branding ,
+    header nav,
+    #newsLetter h1,
+    #newsLetter form,
+    #boxes .box {
+        float:none;
+        text-align: center;
+        width:100%;
+    }
+
+    #newsLetter {
+        margin:auto;
+        text-align:center;
+    }
+
+    #newsLetter button {
+        display: block;
+        width:25%;
+        margin-top:1%;
+        margin-bottom:15;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
     #newsLetter form input[type="email"] {
         display:block;
         width:48.3%;

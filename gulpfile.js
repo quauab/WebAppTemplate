@@ -2,7 +2,8 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     sass = require('gulp-sass'),
-    es = require('event-stream');
+    es = require('event-stream'),
+    babel = require('gulp-babel');
 
 gulp.task('styles', function(){
     var bootstrap = gulp.src('./public/css/bootstrap.min.css');
@@ -28,6 +29,7 @@ gulp.task('scripts', ['styles'], function(){
     var js = gulp.src(['./public/js/jquery-3.1.1.js','./public/js/utils.js','./public/js/start.js','./public/js/bootstrap.min.js']);
 
     return es.merge(js)
+    .pipe(babel({presets:['es2015']}))
     .pipe(concat('scripts.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./public/dist'));
